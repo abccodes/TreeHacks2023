@@ -1,0 +1,2800 @@
+Input,Output
+Login page with a modern UI,"<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+  }
+
+  body {
+background: #f2f2f2;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+  }
+
+  .container {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  .login-box {
+background: #fff;
+border-radius: 10px;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+padding: 40px;
+position: relative;
+max-width: 400px;
+width: 100%;
+  }
+
+  .login-box h2 {
+font-size: 32px;
+color: #333;
+margin-bottom: 30px;
+text-align: center;
+  }
+
+  .login-box .user-box {
+position: relative;
+  }
+
+  .login-box .user-box input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #333;
+margin-bottom: 30px;
+border: none;
+border-bottom: 2px solid #e7e7e7;
+outline: none;
+background: transparent;
+  }
+
+  .login-box .user-box label {
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #999;
+pointer-events: none;
+transition: 0.5s;
+  }
+
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: #ff652f;
+font-size: 12px;
+  }
+
+  .login-box a {
+display: inline-block;
+position: relative;
+padding: 10px 20px;
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+text-decoration: none;
+overflow: hidden;
+margin-top: 40px;
+  }
+
+  .login-box a:hover {
+background: #ff652f;
+  }
+
+  .login-box a span {
+position: absolute;
+display: block;
+background: #f2f2f2;
+  }
+
+  .login-box a span:nth-child(1) {
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+transition: 0.5s;
+  }
+
+  .login-box a:hover span:nth-child(1) {
+left: 100%;
+  }
+  
+  .login-box a span:nth-child(2) {
+top: -100%;
+right: 0;
+width: 2px;
+height: 100%;
+transition: 0.5s;
+  }
+  
+  .login-box a:hover span:nth-child(2) {
+top: 100%;
+  }
+  
+  .login-box a span:nth-child(3) {
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+transition: 0.5s;
+  }
+  
+  .login-box a:hover span:nth-child(3) {
+right: 100%;
+  }
+  
+  .login-box a span:nth-child(4) {
+bottom: -100%;
+left: 0;
+width: 2px;
+height: 100%;
+transition: 0.5s;
+  }
+  
+  .login-box a:hover span:nth-child(4) {
+bottom: 100%;
+  }
+</style>
+<script>
+  const inputs = document.querySelectorAll("".user-box input"");
+
+  function focusFunc() {
+let parent = this.parentNode;
+parent.classList.add(""focus"");
+  }
+  
+  function blurFunc() {
+let parent = this.parentNode;
+if (this.value == """") {
+  parent.classList.remove(""focus"");
+}
+  }
+  
+  inputs.forEach(input => {
+input.addEventListener(""focus"", focusFunc);
+input.addEventListener(""blur"", blurFunc);
+  });
+</script>
+<div class=""container"">
+  <div class=""login-box"">
+<h2>Login</h2>
+<form>
+  <div class=""user-box"">
+<input type=""text"" name=""username"" required="""">
+<label>Username</label>
+  </div>
+  <div class=""user-box"">
+<input type=""password"" name=""password"" required="""">
+<label>Password</label>
+  </div>
+  <a href=""#"">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<input type=""submit"" value=""Sign In"">
+  </a>
+</form>
+  </div>
+</div>
+"
+generate a home page with a retro aesthetic ,"<!DOCTYPE html>
+<html>
+<head>
+<title>My Retro Website</title>
+<style>
+body {
+background-color: #8d1010;
+color: #fff;
+font-family: 'VT323', monospace;
+margin: 0;
+padding: 0;
+line-height: 1.5;
+}
+
+header {
+background-color: #000;
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+font-size: 4rem;
+margin-bottom: 10px;
+text-shadow: 2px 2px #000;
+}
+
+h2 {
+font-size: 2rem;
+margin-bottom: 10px;
+text-shadow: 2px 2px #000;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+display: flex;
+justify-content: center;
+}
+nav li {
+margin: 0 10px;
+}
+nav li a {
+color: #fff;
+text-decoration: none;
+font-size: 1.2rem;
+text-shadow: 2px 2px #000;
+}main { margin: 20px;
+}p {font-size: 1.2rem; margin-bottom: 10px; text-shadow: 2px 2px #000;
+}  ul {margin: 0; padding: 0; list-style-type: none;
+} li {  margin-bottom: 10px;font-size: 1.2rem; text-shadow: 2px 2px #000;
+} .btn {background-color: #ffc107; color: #000; padding: 10px 20px; border: none;border-radius: 5px;font-size: 1.2rem;text-shadow: none;box-shadow: 2px 2px #000; cursor: pointer;
+} .btn:hover { background-color: #ffa000;}
+footer {
+background-color: #000; padding: 10px;text-align: center; position: fixed;bottom: 0;width: 100%;
+}
+@media only screen and (max-width: 768px) {
+h1 {  font-size: 3rem;}
+h2 {font-size: 1.8rem;  }
+nav li a { font-size: 1rem; }
+p {  font-size: 1rem; }
+li {  font-size: 1rem;}
+.btn {   font-size: 1rem; padding: 8px 16px;
+}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+ <ul>
+<li><a href=""#"">Home</a></li>
+<li><a href=""#"">About</a></li>
+ <li><a href=""#"">Contact</a></li>
+</ul>
+</nav>
+ <h1>Welcome to My Retro Website</h1>
+ <p>Bringing back the good old days with a touch of modern </p>"
+Login page with a retro aesthetic,"<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0e0c0;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-form {
+      background: #f0e0c0;
+      border: 3px solid #5a5a5a;
+      padding: 30px;
+    }
+
+    .login-form h1 {
+      color: #5a5a5a;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .login-form label {
+      color: #5a5a5a;
+      display: block;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .login-form input {
+      background: none;
+      border: none;
+      border-bottom: 2px solid #5a5a5a;
+      color: #5a5a5a;
+      font-size: 24px;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      width: 100%;
+    }
+
+    .login-form button {
+      background: #5a5a5a;
+      border: none;
+      color: #f0e0c0;
+      cursor: pointer;
+      font-size: 24px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .login-form button:hover {
+      background: #f0e0c0;
+      color: #5a5a5a;
+    }
+  </style>
+  <script>
+    const form = document.querySelector("".login-form"");
+    const usernameInput = document.getElementById(""username"");
+    const passwordInput = document.getElementById(""password"");
+    
+    form.addEventListener(""submit"", function(event) {
+      event.preventDefault();
+    
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+    
+      if (username === """" || password === """") {
+        alert(""Please enter your username and password"");
+      } else {
+        alert(""Welcome back, "" + username + ""!"");
+      }
+    });
+  </script>
+  <div class=""container"">
+                <form class=""login-form"">
+                        <h1>Login</h1>
+                        <label for=""username"">Username</label>
+                        <input type=""text"" id=""username"" name=""username"">
+                        <label for=""password"">Password</label>
+                        <input type=""password"" id=""password"" name=""password"">
+                        <button type=""submit"">Sign In</button>
+                </form>
+        </div>"
+generate me a modern UI about page for my website,"<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+h1 {
+font-size: 2rem;
+margin-bottom: 10px;
+}
+main {
+margin: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+.card {
+background-color: #fff;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+margin-bottom: 20px;
+padding: 20px;
+width: 45%;
+flex-basis: 45%;
+text-align: center;
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+transition: all 0.2s ease-in-out;
+}
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}.card img {
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}.card h2 {margin-top: 100px;font-size: 1.5rem;
+ } .card p {
+font-size: 1.2rem;
+margin-bottom: 10px; }
+@media only screen and (max-width: 768px) {
+main { flex-direction: column; align-items: center;
+}
+.card {  width: 100%; flex-basis: 100%;} }
+</style>
+</head>
+<body> <header><h1>About Us</h1> </header><main> <div class=""card""> <img src=""https://via.placeholder.com/500x300"" alt=""Placeholder Image""> <h2>Our Story</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat lectus vel tortor aliquam suscipit. Nunc et dolor vel lorem dapibus commodo eu sed eros.</p> </div><div class=""card""> <img src=""https://via.placeholder.com/500x300"" alt=""Placeholder Image""> <h2>Our Mission</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat lectus vel tortor aliquam suscipit. Nunc et dolor vel lorem dapibus commodo eu sed eros.</p>
+</div>
+</main>
+</body>
+</html>
+"
+Contact page with a modern UI,"<!DOCTYPE html>
+<html>
+<head>
+<meta charset=""UTF-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<title>Contact Us</title> <style> * {margin: 0; padding: 0;
+  box-sizing: border-box; } body { font-family: sans-serif;  background: #f2f2f2;
+}.container {max-width: 700px;margin: 0 auto;padding: 50px;background: #fff;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);border-radius: 10px;display: flex;  flex-wrap: wrap; justify-content: space-between;
+} h2 {  font-size: 36px;margin-bottom: 30px;  color: #333;   width: 100%; text-align: center;
+}form {   width: calc(50% - 20px);
+} input[type=""text""], input[type=""email""], textarea { width: 100%; padding: 10px;  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+   background: #f2f2f2;
+   font-size: 16px;
+resize: none;
+}
+
+input[type=""submit""] {
+ background: #333;
+  color: #fff; border: none;
+padding: 10px 20px;
+   border-radius: 5px;
+ font-size: 16px;
+   cursor: pointer;
+ transition: background 0.3s ease-in-out;
+ }
+
+ input[type=""submit""]:hover {
+  background: #4c4c4c;
+ }
+
+.contact-info {
+  width: calc(50% - 20px);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact-info div {
+ display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+
+.contact-info i {
+font-size: 24px;
+color: #333;
+   margin-right: 10px;
+ }
+.contact-info p {
+color: #333;
+font-size: 16px;
+line-height: 1.5;
+margin: 0;
+}
+ </style>
+</head>
+<body>
+<div class=""container"">  <h2>Contact Us</h2>
+<form> <input type=""text"" id=""name"" name=""name"" placeholder=""Name"" required><input type=""email"" id=""email"" name=""email"" placeholder=""Email"" required> <textarea id=""message"" name=""message"" rows=""5"" placeholder=""Message"" required></textarea> <input type=""submit"" value=""Send Message""> </form><div class=""contact-info""> <div>  <i class=""fa fa-map-marker""></i>  <p>123 Main St<br>Anytown, USA 12345</p>
+   </div>   <div><i class=""fa fa-phone""></i><p>(555) 555-5555</p>   </div>   <div>  <i class=""fa fa-envelope""></i> <p>info@example.com</p></div>
+</div></div> <script>   const form = document.querySelector('form');form.addEventListener('submit', event => {  event.preventDefault();const name = document.getElementById('name').value; const email = document.getElementById('email').value;const message = document.getElementById('message').value; alert(`Thank you, ${name}, for your message. We will get back to you at ${email} as soon as possible.`);form.reset(); }); </script>
+</body>
+</html>
+"
+Girly home page,"<!DOCTYPE html>
+<html>
+<head>
+<meta charset=""UTF-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<title>Home Page</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: #f9e8e8;
+font-family: 'Arial', sans-serif;
+color: #333;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 50px;
+}
+
+h1 {
+font-size: 48px;
+margin-bottom: 30px;
+color: #f26d8a;
+text-align: center;
+}
+
+.card-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.card {
+margin: 20px;
+width: 300px;
+background: #fff;
+border-radius: 10px;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+text-align: center;
+position: relative;
+}
+
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+font-size: 24px;
+margin-top: 20px;
+}
+
+.card p {
+font-size: 16px;
+line-height: 1.5;
+margin: 20px;
+height: 60px;
+overflow-y: scroll;
+}
+
+.card button {
+background: #f26d8a;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+transition: background 0.3s ease-in-out;
+}
+
+.card button:hover {
+background: #ff7b9c;
+}
+
+@media (max-width: 768px) {
+.card {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<div class=""container"">
+<h1>Welcome to our website!</h1>
+<div class=""card-container"">
+<div class=""card"">
+<img src=""https://via.placeholder.com/300x200/f26d8a/ffffff?text=Product+1"" alt=""Product 1"">
+<h2>Product 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ante euismod, laoreet purus id, sagittis odio. Morbi vel gravida lacus.</p>
+<button>Buy Now</button>
+</div>
+<div class=""card"">
+<img src=""https://via.placeholder.com/300x200/f26d8a/ffffff?text=Product+2"" alt=""Product 2"">
+<h2>Product 2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ante euismod, laoreet purus id, sagittis odio. Morbi vel gravida lacus.</p>
+<button>Buy Now</button>
+</div>
+<div class=""card"">
+<img src=""https://via.placeholder.com/300x200/f26d8a/ffffff?text=Product+3"" alt=""Product 3"">
+<h2>Product 3</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ante euismod, laoreet purus id, sagittis odio. Morbi vel gravida lacus.</p>
+<button>Buy Now</button>
+</div>
+</div>
+</div>
+<script>
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+button.addEventListener('click', () => {
+alert('Thank you for your purchase!');
+});
+});
+</script>
+</body>
+</html>
+"
+Snake clone,"<!DOCTYPE html>
+<html>
+<head>
+<meta charset=""UTF-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<title>Snake Game Clone</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: #f2f2f2;
+font-family: 'Arial', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+canvas {
+background: #fff;
+border: 1px solid #333;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+margin: 20px;
+}
+
+h1 {
+font-size: 48px;
+color: #333;
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Snake Game Clone</h1>
+<canvas id=""canvas"" width=""400"" height=""400""></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+
+const grid = 16;
+let count = 0;
+
+const snake = {
+x: 160,
+y: 160,
+dx: grid,
+dy: 0,
+cells: [],
+maxCells: 4
+};
+
+const apple = {
+x: 320,
+y: 320
+};
+
+function getRandomInt(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function loop() {
+requestAnimationFrame(loop);
+
+if (++count < 6) {
+return;
+}
+
+count = 0;
+context.clearRect(0, 0, canvas.width, canvas.height);
+
+snake.x += snake.dx;
+snake.y += snake.dy;
+
+if (snake.x < 0) {
+snake.x = canvas.width - grid;
+} else if (snake.x >= canvas.width) {
+snake.x = 0;
+}
+
+if (snake.y < 0) {
+snake.y = canvas.height - grid;
+} else if (snake.y >= canvas.height) {
+snake.y = 0;
+}
+
+snake.cells.unshift({x: snake.x, y: snake.y});
+
+if (snake.cells.length > snake.maxCells) {
+snake.cells.pop();
+}
+
+context.fillStyle = '#1c1c1c';
+snake.cells.forEach(function(cell, index) {
+context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
+
+if (cell.x === apple.x && cell.y === apple.y) {
+snake.maxCells++;
+apple.x = getRandomInt(0, 25) * grid;
+apple.y = getRandomInt(0, 25) * grid;
+}
+
+for (let i = index + 1; i < snake.cells.length; i++) {
+if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+snake.x = 160;
+snake.y = 160;
+snake.cells = [];
+snake.max
+  break;
+  }
+}
+});
+
+context.fillStyle = '#f26d8a';
+context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+}
+
+document.addEventListener('keydown', function(event) {
+if (event.which === 37 && snake.dx === 0) {
+snake.dx = -grid;
+snake.dy = 0;
+} else if (event.which === 38 && snake.dy === 0) {
+snake.dy = -grid;
+snake.dx = 0;
+} else if (event.which === 39 && snake.dx === 0) {
+snake.dx = grid;
+snake.dy = 0;
+} else if (event.which === 40 && snake.dy === 0) {
+snake.dy = grid;
+snake.dx = 0;
+}
+});
+
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>"
+Pong clone,"<!DOCTYPE html>
+<html>
+<head>
+<meta charset=""UTF-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<title>Pong Game Clone</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: #f2f2f2;
+font-family: 'Arial', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+canvas {
+background: #fff;
+border: 1px solid #333;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+margin: 20px;
+}
+
+h1 {
+font-size: 48px;
+color: #333;
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Pong Game Clone</h1>
+<canvas id=""canvas"" width=""480"" height=""320""></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+
+let ball = {
+x: canvas.width / 2,
+y: canvas.height / 2,
+dx: 5,
+dy: 5,
+radius: 10
+};
+
+let paddle1 = {
+x: 20,
+y: canvas.height / 2 - 40,
+width: 10,
+height: 80,
+score: 0
+};
+
+let paddle2 = {
+x: canvas.width - 30,
+y: canvas.height / 2 - 40,
+width: 10,
+height: 80,
+score: 0
+};
+
+let upPressed = false;
+let downPressed = false;
+
+function drawBall() {
+context.beginPath();
+context.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+context.fillStyle = '#f26d8a';
+context.fill();
+context.closePath();
+}
+
+function drawPaddle1() {
+context.beginPath();
+context.rect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+context.fillStyle = '#1c1c1c';
+context.fill();
+context.closePath();
+}
+
+function drawPaddle2() {
+context.beginPath();
+context.rect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+context.fillStyle = '#1c1c1c';
+context.fill();
+context.closePath();
+}
+
+function drawScore() {
+context.font = '16px Arial';
+context.fillStyle = '#333';
+context.fillText('Player 1: ' + paddle1.score, 8, 20);
+context.fillText('Player 2: ' + paddle2.score, canvas.width - 85, 20);
+}
+
+function collisionDetection() {
+if (ball.y + ball.dy > canvas.height - ball.radius || ball.y + ball.dy < ball.radius) {
+ball.dy = -ball.dy;
+}
+
+if (ball.x + ball.dx > canvas.width - ball.radius) {
+if (ball.y > paddle2.y && ball.y < paddle2.y
++ paddle2.height) {
+ball.dx = -ball.dx;
+} else {
+paddle1.score++;
+reset();
+}
+}
+
+if (ball.x + ball.dx < ball.radius + paddle1.width) {
+if (ball.y > paddle1.y && ball.y < paddle1.y + paddle1.height) {
+ball.dx = -ball.dx;
+} else {
+paddle2.score++;
+reset();
+}
+}
+}
+
+function reset() {
+ball = {
+x: canvas.width / 2,
+y: canvas.height / 2,
+dx: -ball.dx,
+dy: -ball.dy,
+radius: 10
+};
+}
+
+function draw() {
+context.clearRect(0, 0, canvas.width, canvas.height);
+drawBall();
+drawPaddle1();
+drawPaddle2();
+drawScore();
+collisionDetection();
+
+if (upPressed && paddle1.y > 0) {
+paddle1.y -= 7;
+} else if (downPressed && paddle1.y < canvas.height - paddle1.height) {
+paddle1.y += 7;
+}
+
+if (ball.y + ball.dy > canvas.height - ball.radius || ball.y + ball.dy < ball.radius) {
+ball.dy = -ball.dy;
+}
+
+ball.x += ball.dx;
+ball.y += ball.dy;
+
+requestAnimationFrame(draw);
+}
+
+document.addEventListener('keydown', keyDownHandler);
+document.addEventListener('keyup', keyUpHandler);
+
+function keyDownHandler(event) {
+if (event.key === 'ArrowUp') {
+upPressed = true;
+} else if (event.key === 'ArrowDown') {
+downPressed = true;
+}
+}
+
+function keyUpHandler(event) {
+if (event.key === 'ArrowUp') {
+upPressed = false;
+} else if (event.key === 'ArrowDown') {
+downPressed = false;
+}
+}
+
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>
+"
+ A website contact page with a retro UI,"<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"">
+  <style>
+    /* Global styles */
+    body {
+      background-color: #F0ECE8;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+    
+    /* Contact form */
+    .form-container {
+      background-color: #D8C3A5;
+      border-radius: 8px;
+      margin: 64px auto;
+      max-width: 600px;
+      padding: 40px;
+      text-align: center;
+
+    }
+    
+    .form-container h2 {
+      color: #5D5C61;
+      font-size: 24px;
+      margin-bottom: 32px;
+      text-transform: uppercase;
+    }
+    
+    .form-input {
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      margin-bottom: 16px;
+      padding: 16px;
+      width: 100%;
+    }
+    
+    .form-textarea {
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      margin-bottom: 16px;
+      padding: 16px;
+      width: 100%;
+      height: 200px;
+    }
+    
+    .form-submit {
+      background-color: #5D5C61;
+      border: none;
+      border-radius: 4px;
+      color: #F0ECE8;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 16px;
+      padding: 16px 32px;
+      text-transform: uppercase;
+    }
+    
+    .form-submit:hover {
+      background-color: #FFC857;
+      color: #5D5C61;
+    }
+  </style>
+</head>
+<body>
+  <div class=""form-container"">
+    <h2>Contact Us</h2>
+    <form>
+      <input class=""form-input"" type=""text"" name=""name"" placeholder=""Name"" required><br>
+      <input class=""form-input"" type=""email"" name=""email"" placeholder=""Email"" required><br>
+      <textarea class=""form-textarea"" name=""message"" placeholder=""Message"" required></textarea><br>
+      <button class=""form-submit"" type=""submit"">Submit</button>
+    </form>
+  </div>
+</body>
+</html>"
+The front page for a portfolio website,"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=""UTF-8"">
+    <title>My Portfolio</title>
+    <style>
+      /* CSS code here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        color: #fff;
+      }
+      h1 {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #ccc;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+      nav a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+      section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        background-image: url('https://images.unsplash.com/photo-1531378970555-56c9598b2c37');
+        background-size: cover;
+        background-position: center;
+      }
+      .intro {
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-right: 5rem;
+      }
+      .intro h2 {
+        margin: 0 0 1rem 0;
+      }
+      .intro p {
+        margin: 0 0 1rem 0;
+      }
+      .intro button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .intro button:hover {
+        background-color: #fff;
+        color: #333;
+      }
+      .image {
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        height: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href=""#"">Home</a>
+        <a href=""#"">Portfolio</a>
+        <a href=""#"">Contact</a>
+      </nav>
+    </header>
+    <section>
+      <div class=""intro"">
+        <h2>Welcome to my portfolio</h2>
+        <p>I am a web developer based in [location]. I specialize in [specialization].</p>
+        <button>Contact me</button>
+      </div>
+      <div class=""image"">
+        <img src=""https://images.unsplash.com/photo-1521747116042-5a810fda9664"">
+      </div>
+    </section>
+    <footer>
+      &copy; My Portfolio 2023
+    </footer>
+    <script>
+      // JS code here
+      const contactButton = document.querySelector('.intro button');
+      contactButton.addEventListener('click', () => {
+        window.location.href = 'contact.html';
+      });
+    </script>
+  </body>
+</html>"
+a website for small businesses,"<!DOCTYPE html>
+<html>
+<head>
+<title>Small Business Website</title>
+<meta charset=""UTF-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 1em;
+}
+
+header a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.2em;
+margin-right: 1em;
+}
+
+main {
+padding: 1em;
+max-width: 800px;
+margin: 0 auto;
+}
+
+h2 {
+font-size: 2em;
+margin-top: 2em;
+margin-bottom: 1em;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+margin-bottom: 0.5em;
+}
+
+form {
+display: flex;
+flex-direction: column;
+max-width: 500px;
+}
+
+label, input, textarea {
+margin-bottom: 0.5em;
+}
+
+input, textarea {
+padding: 0.5em;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+padding: 0.5em;
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #555;
+}
+
+footer {
+background-color: #eee;
+padding: 1em;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<a href=""#"">Small Business Website</a>
+<nav>
+<a href=""#"">Home</a>
+<a href=""#about-us"">About Us</a>
+<a href=""#services"">Services</a>
+<a href=""#testimonials"">Testimonials</a>
+<a href=""#contact"">Contact Us</a>
+</nav>
+</header>
+
+<main>
+<section id=""about-us"">
+<h2>About Us</h2>
+<p>We are a small business that specializes in...</p>
+</section>
+
+<section id=""services"">
+<h2>Services</h2>
+<ul>
+<li>Service 1</li>
+<li>Service 2</li>
+<li>Service 3</li>
+</ul>
+</section>
+
+<section id=""testimonials"">
+<h2>Testimonials</h2>
+<ul>
+<li>Testimonial 1</li>
+<li>Testimonial 2</li>
+<li>Testimonial 3</li>
+</ul>
+</section>
+
+<section id=""contact"">
+<h2>Contact Us</h2>
+<form>
+<label for=""name"">Name:</label>
+<input type=""text"" id=""name"" name=""name"" required>
+
+<label for=""email"">Email:</label>
+<input type=""email"" id=""email"" name=""email"" required>
+
+<label for=""message"">Message:</label>
+<textareaid=""message"" name=""message"" rows=""5"" required></textarea>
+
+<button type=""submit"">Send</button>
+</form>
+</section>
+</main>
+
+<footer>
+&copy; 2023 Small Business Website. All rights reserved.
+</footer>
+</body>
+</html>
+"
+a portfolio website for a student,"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=""UTF-8"">
+    <title>Student Portfolio</title>
+    <style>
+      /* Add your CSS code here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      section {
+        padding: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Student Portfolio</h1>
+    </header>
+    <nav>
+      <a href=""#"">Home</a>
+      <a href=""#"">About</a>
+      <a href=""#"">Projects</a>
+      <a href=""#"">Contact</a>
+    </nav>
+    <section>
+      <h2>About Me</h2>
+      <p>Add your introduction here.</p>
+    </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href=""#"">Project 1</a></li>
+        <li><a href=""#"">Project 2</a></li>
+        <li><a href=""#"">Project 3</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <form>
+        <label for=""name"">Name:</label>
+        <input type=""text"" id=""name"" name=""name""><br><br>
+        <label for=""email"">Email:</label>
+        <input type=""email"" id=""email"" name=""email""><br><br>
+        <label for=""message"">Message:</label>
+        <textarea id=""message"" name=""message""></textarea><br><br>
+        <input type=""submit"" value=""Submit"">
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Student Portfolio</p>
+    </footer>
+    <script>
+      // Add your JS code here
+      // You can use vanilla JS to add interactivity to your website
+      console.log(""Welcome to my portfolio website!"");
+    </script>
+  </body>
+</html>"
+an ecommerce website that has a cool style,"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=""UTF-8"">
+    <title>Cool Ecommerce Website</title>
+    <style>
+      /* Add your CSS code here */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .card {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+      .card h3 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .card p {
+        font-size: 16px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cool Ecommerce Website</h1>
+    </header>
+    <nav>
+      <a href=""#"">Home</a>
+      <a href=""#"">Shop</a>
+      <a href=""#"">About</a>
+      <a href=""#"">Contact</a>
+    </nav>
+    <main>
+      <div class=""card"">
+        <img src=""https://picsum.photos/300/300"" alt=""Product"">
+        <h3>Product 1</h3>
+        <p>$99.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class=""card"">
+        <img src=""https://picsum.photos/300/300"" alt=""Product"">
+        <h3>Product 2</h3>
+        <p>$149.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class=""card"">
+        <img src=""https://picsum.photos/300/300"" alt=""Product"">
+        <h3>Product 3</h3>
+        <p>$199.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class=""card"">
+        <img src=""https://picsum.photos/300/300"" alt=""Product"">
+        <h3>Product 4</h3>
+        <p>$249.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class=""card"">
+      <img src=""https://picsum.photos/300/300"" alt=""Product"">
+      <h3>Product 5</h3>
+      <p>$299.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class=""card"">
+      <img src=""https://picsum.photos/300/300"" alt=""Product"">
+      <h3>Product 6</h3>
+      <p>$349.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class=""card"">
+      <img src=""https://picsum.photos/300/300"" alt=""Product"">
+      <h3>Product 7</h3>
+      <p>$399.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class=""card"">
+      <img src=""https://picsum.photos/300/300"" alt=""Product"">
+      <h3>Product 8</h3>
+      <p>$449.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Cool Ecommerce Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>"
+A website that grabs the weather for a given location from the National Weather Service,"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=""UTF-8"">
+    <title>Weather App</title>
+    <style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+background-color: #333;
+color: #fff;
+}
+h1 {
+margin: 0;
+}
+form {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+}
+input[type=""text""] {
+font-size: 1.5rem;
+padding: 0.5rem;
+border: none;
+border-bottom: 2px solid #333;
+margin-right: 1rem;
+}
+input[type=""submit""] {
+font-size: 1.5rem;
+padding: 0.5rem 1rem;
+border: none;
+border-radius: 5px;
+background-color: #333;
+color: #fff;
+cursor: pointer;
+}
+input[type=""submit""]:hover {
+background-color: #fff;
+color: #333;
+}
+main {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+}
+      .current-weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #ccc;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+      .current-weather img {
+        max-width: 150px;
+        max-height: 150px;
+        margin-right: 2rem;
+      }
+      .current-weather h2 {
+        margin: 0;
+      }
+      .current-weather p {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+      .forecast {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+      }
+      .forecast-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      .forecast-item img {
+        max-width: 75px;
+        max-height: 75px;
+        margin-bottom: 0.5rem;
+      }
+      .forecast-item h3 {
+        margin: 0;
+      }
+      .forecast-item p {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <form>
+      <input type=""text"" id=""location"" placeholder=""Enter longitude, latitude"">
+      <input type=""submit"" value=""Get Weather"">
+    </form>
+    <main>
+      <div class=""current-weather"" style=""display: none;"">
+        <img id=""current-weather-icon"" src="""" alt="""">
+        <div>
+          <h2 id=""current-temperature""></h2>
+          <p id=""current-description""></p>
+        </div>
+      </div>
+      <div class=""forecast"" style=""display: none;"">
+        <div class=""forecast-item"">
+          <img class=""forecast-icon"" src="""" alt="""">
+          <h3 class=""forecast-day""></h3>
+          <p class=""forecast-temp""></p>
+        </div>
+        <div class=""forecast-item"">
+          <img class=""forecast-icon"" src="""" alt="""">
+          <h3 class=""forecast-day""></h3>
+          <p class=""forecast-temp""></p>
+        </div>
+        <div class=""forecast-item"">
+          <img class=""forecast-icon"" src="""" alt="""">
+          <h3 class=""forecast-day""></h3>
+          <p class=""forecast-temp""></p>
+        </div>
+      </div>
+    </main>
+<script>
+// JS code here
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+event.preventDefault();
+const locationInput = document.querySelector('#location');
+const location = locationInput.value;
+fetch(`https://api.weather.gov/points/${location}`)
+.then(response => response.json())
+.then(data => {
+console.log(data);
+const forecastUrl = data.properties.forecast;
+return fetch(forecastUrl);
+})
+.then(response => response.json())
+.then(data => {
+const currentData = data.properties.periods[0];
+const forecastData = data.properties.periods.slice(1, 4);
+const currentWeatherElement = document.querySelector('.current-weather');
+const forecastElement = document.querySelector('.forecast');
+const currentIconElement = document.querySelector('#current-weather-icon');
+const currentTemperatureElement = document.querySelector('#current-temperature');
+const currentDescriptionElement = document.querySelector('#current-description');
+const forecastItems = document.querySelectorAll('.forecast-item');
+currentIconElement.src = currentData.icon;
+currentTemperatureElement.textContent = currentData.temperature + ""°F"";
+currentDescriptionElement.textContent = currentData.shortForecast;
+currentWeatherElement.style.display = ""flex"";
+forecastElement.style.display = ""grid"";
+forecastItems.forEach((item, index) => {
+const forecastItemData = forecastData[index];
+const iconElement = item.querySelector('.forecast-icon');
+const dayElement = item.querySelector('.forecast-day');
+const tempElement = item.querySelector('.forecast-temp');
+iconElement.src = forecastItemData.icon;
+dayElement.textContent = forecastItemData.name;
+tempElement.textContent = forecastItemData.temperature + ""°F"";
+});
+})
+.catch(error => console.log(error));
+});
+</script>
+  </body>
+</html>"
+a blog website,"<!DOCTYPE html>
+<html lang=""en"">
+  <head>
+    <meta charset=""UTF-8"" />
+    <title>My Blog</title>
+    <style>
+      /* CSS styles for the blog */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #555;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .card {
+        width: 30%;
+        background-color: white;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .card-title {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+      }
+
+      .card-text {
+        font-size: 16px;
+        margin: 0 0 20px 0;
+      }
+
+      .card-link {
+        display: block;
+        text-align: right;
+        font-size: 16px;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .card-link:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background-color: #555;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Blog</h1>
+    </header>
+    <nav>
+      <a href=""#"">Home</a>
+      <a href=""#"">About</a>
+      <a href=""#"">Contact</a>
+    </nav>
+    <div class=""container"">
+      <div class=""card"">
+        <img src=""https://picsum.photos/400/200"" alt=""Blog Post"" />
+        <div class=""card-content"">
+          <h2 class=""card-title"">My First Blog Post</h2>
+          <p class=""card-text"">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            dapibus, elit ut feugiat laoreet, enim augue ornare odio, eget
+            ultricies arcu felis vel augue. Donec tincidunt, magna eget
+            pellentesque auctor, libero odio sollicitudin leo, at mollis
+            diam sapien ac tellus.
+          </p>
+          <a href=""#"" class=""card-link"">Read more &rarr;</a>
+        </div>
+      </div>
+      <div class=""card"">
+        <img src=""https://
+        picsum.photos/400/200"" alt=""Blog Post"" />
+        <div class=""card-content"">
+          <h2 class=""card-title"">My Second Blog Post</h2>
+          <p class=""card-text"">
+            Phasellus gravida felis vel libero pulvinar, nec posuere nulla
+            vel
+  
+          </p>
+          <a href=""#"" class=""card-link"">Read more &rarr;</a>
+        </div>
+      </div>
+      <div class=""card"">
+        <img src=""https://picsum.photos/400/200"" alt=""Blog Post"" />
+        <div class=""card-content"">
+          <h2 class=""card-title"">My Third Blog Post</h2>
+          <p class=""card-text"">
+            Donec vel velit vel erat ullamcorper gravida eget eget tortor.
+            Aliquam id est id est viverra congue pellentesque.
+          </p>
+          <a href=""#"" class=""card-link"">Read more &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 My Blog</p>
+    </footer>
+    <script>
+      // JavaScript code for the blog
+      console.log(""Welcome to My Blog!"");
+    </script>
+    </body>
+    </html>"
+a nonprofit website,"<!DOCTYPE html>
+<html lang=""en"">
+  <head>
+    <meta charset=""UTF-8"" />
+    <title>My Nonprofit Website</title>
+    <style>
+      /* CSS styles for the nonprofit website */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #005bbb;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      nav {
+        background-color: #eeeeee;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+
+      nav a {
+        color: #005bbb;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      .call-to-action {
+        background-color: #005bbb;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .call-to-action h2 {
+        margin: 0;
+      }
+
+      .call-to-action p {
+        margin: 1rem 0;
+      }
+
+      footer {
+        background-color: #eeeeee;
+        color: #444444;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Nonprofit</h1>
+    </header>
+    <nav>
+      <a href=""#"">Home</a>
+      <a href=""#"">About Us</a>
+      <a href=""#"">Programs</a>
+      <a href=""#"">Get Involved</a>
+      <a href=""#"">Donate</a>
+      <a href=""#"">Contact Us</a>
+    </nav>
+    <section>
+      <h2>Welcome to My Nonprofit</h2>
+      <p>
+        We are a nonprofit organization dedicated to serving our community and
+        making a difference in the lives of those we help. Learn more about us
+        and our programs below.
+      </p>
+    </section>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        condimentum purus at risus vehicula ullamcorper. Sed id turpis nec
+        massa faucibus egestas. Duis eu nibh auctor, rhoncus nisl ac, viverra
+        dolor. Aliquam efficitur tellus vel tellus interdum, et ullamcorper
+        massa suscipit. Nam euismod vel eros non fringilla. Nullam vel felis
+        auctor, dictum tortor vel, vehicula dolor. Sed nec lacus eu magna
+        malesuada placerat.
+      </p>
+    </section>
+    <section>
+      <h2>Our Programs</h2>
+      <p>
+        Nulla luctus lorem sed justo consequat ullamcorper. Etiam id enim
+        fermentum, varius est a, placerat elit. Donec eu dolor eget velit
+        scelerisque varius. Sed rutrum augue et est dapibus, vel bibendum
+        sapien euismod. Suspendisse nec turpis non nibh tincidunt pulvinar vel
+        vel enim. Nullam ultricies leo id tellus pul
+        vinar semper.
+    </p>
+  </section>
+  <section class=""call-to-action"">
+    <h2>Get Involved Today</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      condimentum purus at risus vehicula ullamcorper.
+    </p>
+    <button>Donate Now</button>
+  </section>
+  <footer>
+    <p>&copy; 2023 My Nonprofit. All rights reserved.</p>
+  </footer>
+  <script>
+    // JavaScript code for the nonprofit website
+    const donateButton = document.querySelector('button');
+    donateButton.addEventListener('click', function() {
+      alert('Thank you for your donation!');
+    });
+  </script>
+  </body>
+  </html>"
+an event website,"<!DOCTYPE html>
+<html lang=""en"">
+  <head>
+    <meta charset=""UTF-8"" />
+    <title>My Event Website</title>
+    <style>
+      /* CSS styles for the event website */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #005bbb;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      nav {
+        background-color: #eeeeee;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+
+      nav a {
+        color: #005bbb;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      .call-to-action {
+        background-color: #005bbb;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .call-to-action h2 {
+        margin: 0;
+      }
+
+      .call-to-action p {
+        margin: 1rem 0;
+      }
+
+      footer {
+        background-color: #eeeeee;
+        color: #444444;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .event {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 2rem 0;
+      }
+
+      .event h3 {
+        margin: 0;
+      }
+
+      .event p {
+        margin: 0;
+      }
+
+      .event img {
+        max-width: 100%;
+        margin: 1rem 0;
+      }
+
+      .event button {
+        background-color: #005bbb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
+        margin: 1rem 0;
+        cursor: pointer;
+      }
+
+      .event button:hover {
+        background-color: #003c6e;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Event</h1>
+    </header>
+    <nav>
+      <a href=""#"">Home</a>
+      <a href=""#"">Schedule</a>
+      <a href=""#"">Speakers</a>
+      <a href=""#"">Sponsors</a>
+      <a href=""#"">Register</a>
+      <a href=""#"">Contact Us</a>
+    </nav>
+    <section>
+      <h2>Welcome to My Event</h2>
+      <p>
+  faucibusDuis eu nibh auctor, rhoncus nisl ac,
+        massa suscipit. Nam euismod vel eros non fringilla. Nullam vel felis
+        auctor, dictum
+        velit sed, bibendum nisl. Suspendisse sollicitudin est vel ligula
+        tristique tristique.
+      </p>
+      <div class=""event"">
+        <img
+          src=""https://via.placeholder.com/400x200.png?text=Event+Image""
+          alt=""Event Image""
+        />
+        <h3>Event Title</h3>
+        <p>Date: September 1-3, 2023</p>
+        <p>Location: Convention Center</p>
+        <button>Register Now</button>
+      </div>
+      <div class=""event"">
+        <img
+          src=""https://via.placeholder.com/400x200.png?text=Event+Image""
+          alt=""Event Image""
+        />
+        <h3>Event Title</h3>
+        <p>Date: September 4-6, 2023</p>
+        <p>Location: Conference Center</p>
+        <button>Register Now</button>
+      </div>
+      <div class=""event"">
+        <img
+          src=""https://via.placeholder.com/400x200.png?text=Event+Image""
+          alt=""Event Image""
+        />
+        <h3>Event Title</h3>
+        <p>Date: September 7-9, 2023</p>
+        <p>Location: Exhibition Hall</p>
+        <button>Register Now</button>
+      </div>
+    </section>
+    <section class=""call-to-action"">
+      <h2>Don't Miss Out</h2>
+      <p>Lorem</p>
+      <button>Learn More</button>
+    </section>
+    <footer>
+      <p>&copy; 2023 My Event. All rights reserved.</p>
+    </footer>
+    <script>
+ //js code
+    </script>
+      </body>
+      </html>"
+a membership website with bright and full styling,"<!DOCTYPE html>
+<html>
+<head>
+<title>Membership Website</title>
+<style>
+body {
+background-color: #F9F9F9;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #FFA500;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1;
+}
+
+header h1 {
+margin: 0;
+}
+
+nav {
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+nav ul {
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav ul li {
+margin-left: 1rem;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+main {
+margin-top: 5rem;
+padding: 2rem;
+}
+
+.section-heading {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 2rem;
+text-transform: uppercase;
+}
+
+.card {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+padding: 2rem;
+margin-bottom: 2rem;
+}
+
+.card h2 {
+margin-top: 0;
+}
+
+.card p {
+margin: 1rem 0;
+}
+
+.button {
+background-color: #FFA500;
+border: none;
+border-radius: 8px;
+color: white;
+cursor: pointer;
+font-weight: bold;
+padding: 1rem 2rem;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.button:hover {
+background-color: #FF8C00;
+}
+
+footer {
+background-color: #333;
+color: white;
+padding: 2rem;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Membership Website</h1>
+<nav>
+<ul>
+<li><a href=""#"">Home</a></li>
+<li><a href=""#"">About</a></li>
+<li><a href=""#"">Contact</a></li>
+<li><a href=""#"">Join Now</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2 class=""section-heading"">Welcome to the Membership Website!</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis elit a elit consequat lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec efficitur eget odio sit amet rutrum. </p>
+<p>Sed congue ultrices efficitur. Sed tincidunt ut nibh id congue. Morbi vel
+lectus at est accumsan tincidunt. Vestibulum sed dui vel dolor euismod tincidunt.</p>
+</section>
+<section>
+<h2 class=""section-heading"">Membership Benefits</h2>
+<div class=""card"">
+<h2>Exclusive Content</h2>
+<p>Get access to exclusive content that is not available to the general public.</p>
+<button class=""button"">Learn More</button>
+</div>
+<div class=""card"">
+<h2>Community Forums</h2>
+<p>Join our community forums and connect with other members who share your interests.</p>
+<button class=""button"">Learn More</button>
+</div>
+<div class=""card"">
+<h2>Member Discounts</h2>
+<p>Enjoy discounts on products and services from our partner companies.</p>
+<button class=""button"">Learn More</button>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Membership Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
+"
+a simple international website,"<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=""UTF-8"">
+  <title>International Website</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    nav {
+      background-color: #f2f2f2;
+      overflow: hidden;
+    }
+    
+    nav a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      background-color: #ddd;
+      color: #333;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>International Website</h1>
+  </header>
+  
+  <nav>
+    <a href=""#"">Home</a>
+    <a href=""#"">About</a>
+    <a href=""#"">Contact</a>
+  </nav>
+  
+  <main>
+    <h2>Welcome to our website!</h2>
+    <p>We offer a variety of products and services to customers around the world. Our team is dedicated to providing high-quality solutions that meet the unique needs of each of our clients.</p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 International Website. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    // JavaScript code goes here
+    // No JS code needed for this simple website
+  </script>
+</body>
+</html>"
+an online forum website,"<!DOCTYPE html>
+<html>
+<head>
+<meta charset=""UTF-8"">
+<title>Online Forum</title>
+<style>
+/* CSS styles go here */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+.header {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.container {
+margin: 20px;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+
+.form label {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.form input[type=""text""], .form textarea {
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+
+.form button {
+padding: 10px;
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.post {
+background-color: #f5f5f5;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.post h2 {
+font-size: 24px;
+margin-top: 0;
+}
+
+.post p {
+margin-bottom: 0;
+}
+</style>
+</head>
+<body>
+<header class=""header"">
+<h1>Online Forum</h1>
+</header>
+<div class=""container"">
+<form class=""form"">
+<label for=""name"">Name:</label>
+<input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">
+<label for=""message"">Message:</label>
+<textarea id=""message"" name=""message"" placeholder=""Enter your message""></textarea>
+<button type=""button"" onclick=""addPost()"">Submit</button>
+</form>
+<div id=""posts"">
+<!-- Posts will be dynamically added here -->
+</div>
+</div>
+<script>
+// JavaScript code goes here
+function addPost() {
+// Get the name and message from the form
+var name = document.getElementById(""name"").value;
+var message = document.getElementById(""message"").value;
+
+// Create a new post element
+var post = document.createElement(""div"");
+post.classList.add(""post"");
+
+// Create a heading element for the post title
+var heading = document.createElement(""h2"");
+heading.textContent = name;
+
+// Create a paragraph element for the post message
+var paragraph = document.createElement(""p"");
+paragraph.textContent = message;
+
+// Add the heading and paragraph elements to the post element
+post.appendChild(heading);
+post.appendChild(paragraph);
+
+// Add the post element to the posts container
+document.getElementById(""posts"").appendChild(post);
+
+// Reset the form
+document.getElementById(""name"").value = """";
+document.getElementById(""message"").value = """";
+}
+</script>
+</body>
+</html>"
+make a blog website,"<!DOCTYPE html>
+<html>
+<head>
+<meta charset=""UTF-8"">
+<title>My Blog</title>
+<style>
+/* CSS styles go here */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+.header {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.container {
+margin: 20px;
+}
+
+.post {
+background-color: #f5f5f5;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.post h2 {
+font-size: 24px;
+margin-top: 0;
+}
+
+.post p {
+margin-bottom: 0;
+}
+
+.sidebar {
+background-color: #f5f5f5;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.sidebar h2 {
+font-size: 18px;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar li {
+margin-bottom: 5px;
+}
+
+.sidebar a {
+color: #333;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<header class=""header"">
+<h1>My Blog</h1>
+</header>
+<div class=""container"">
+<div class=""post"">
+<h2>My First Blog Post</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lectus quis erat dignissim, a elementum nunc vestibulum. Suspendisse potenti. Fusce at eros vel velit sollicitudin venenatis a eget nisl. Praesent a ipsum est. Sed efficitur tellus ac justo gravida, id fringilla elit convallis. Proin porta dui id mauris efficitur, eget vehicula eros faucibus. Donec tincidunt velit auctor, lobortis libero eget, faucibus nulla. Ut eu nunc sit amet velit lobortis interdum non a urna.</p>
+</div>
+<div class=""post"">
+<h2>My Second Blog Post</h2>
+<p>Nulla facilisi. Suspendisse nec lectus vel mi laoreet aliquam. Duis ut massa a nisl maximus scelerisque. Vivamus auctor, turpis eget pellentesque suscipit, dolor augue posuere lorem, vel feugiat massa turpis id elit. Nunc quis bibendum elit. Sed posuere quis justo a ultrices. Fusce et lacus augue.</p>
+</div>
+<div class=""sidebar"">
+<h2>About Me</h2>
+<p>Hi, I'm John Doe and I'm a blogger. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lectus quis erat dignissim, a elementum nunc vestibulum. Suspendisse potenti. Fusce at eros vel velit sollicitudin venenatis a eget n
+</div>
+<div class=""sidebar"">
+<h2>Categories</h2>
+<ul>
+<li><a href=""#"">Category 1</a></li>
+<li><a href=""#"">Category 2</a></li>
+<li><a href=""#"">Category 3</a></li>
+<li><a href=""#"">Category 4</a></li>
+</ul>
+</div>
+</div>
+<script>
+// JavaScript code goes here
+// You can use this section to add any interactivity to your website
+</script>
+</body>
+</html>"
+make a news website,"<!DOCTYPE html>
+<html>
+<head>
+    <title>My News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #333;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .article {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+        }
+        .article h3 {
+            margin-top: 0;
+        }
+        .article p {
+            margin: 0;
+            text-align: justify;
+        }
+        .sidebar {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #666;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My News Website</h1>
+    </header>
+    <nav>
+        <a href=""#"">Home</a>
+        <a href=""#"">World</a>
+        <a href=""#"">Politics</a>
+        <a href=""#"">Sports</a>
+        <a href=""#"">Entertainment</a>
+        <a href=""#"">Technology</a>
+    </nav>
+    <div class=""container"">
+        <div class=""article"">
+            <h3>Article Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat diam vitae sem bibendum, in malesuada lorem vestibulum. Aliquam erat volutpat. Mauris sollicitudin, leo ac lobortis posuere, risus quam aliquam lorem, nec pharetra purus velit vel turpis.</p>
+        </div>
+        <div class=""article"">
+            <h3>Article Title 2</h3>
+            <p>Sed tincidunt quam
+</div>
+<div class=""article"">
+<h3>Article Title 3</h3>
+<p>Phasellus sit amet leo in neque vehicula iaculis. Proin in nibh dolor. Etiam laoreet malesuada justo, eu posuere erat tempor in. Nulla facilisi. Fusce ac purus ligula. Suspendisse potenti.</p>
+</div>
+<div class=""sidebar"">
+<h2>Recent Posts</h2>
+<ul>
+<li><a href=""#"">Article Title 1</a></li>
+<li><a href=""#"">Article Title 2</a></li>
+<li><a href=""#"">Article Title 3</a></li>
+</ul>
+<h2>Categories</h2>
+<ul>
+<li><a href=""#"">World</a></li>
+<li><a href=""#"">Politics</a></li>
+<li><a href=""#"">Sports</a></li>
+<li><a href=""#"">Entertainment</a></li>
+<li><a href=""#"">Technology</a></li>
+</ul>
+</div>
+</div>
+<footer class=""footer"">
+<p>&copy; 2023 My News Website</p>
+</footer>
+</body>
+</html>
+"
+"I want you to be a top of the line website generator. After I give you a brief description and a list of hex colors, you will then output the necessary code to produce the site. You will answer in code and not word. You will output a single html file with css under a style tag and javascript under a script tag. The first color i give you will be the primary color, any following colors will be used for buttons and links. Make sure that every output doesn't exceed 2000 tokens.","<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<style>
+body {
+background-color: #202020;
+color: #fff;
+font-family: Arial, sans-serif;
+}
+
+h1 {
+color: #ffd100;
+font-size: 36px;
+text-align: center;
+margin-top: 50px;
+}
+
+p {
+font-size: 18px;
+line-height: 1.5;
+margin: 30px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #ffd100;
+color: #202020;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+margin: 30px;
+transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+background-color: #fff;
+color: #ffd100;
+}
+</style>
+</head>
+<body>
+<h1>About Me</h1>
+<p>Hi, my name is [Your Name], and I'm a [Your Profession]. I have [Years of Experience] years of experience in [Your Field], and I'm passionate about [Your Passion]. In my free time, I enjoy [Your Hobbies].</p>
+<a href=""#"" class=""button"">Download Resume</a>
+<a href=""#"" class=""button"">Contact Me</a>
+
+<script>
+// JavaScript code can be added here
+</script>
+</body>
+</html>
+"
