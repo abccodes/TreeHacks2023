@@ -1,8 +1,65 @@
-.bg {
-  background: linear-gradient(-45deg, #37829f, #ae71ae, #2f57cf, #cf63c4);
-  background-size: 800% 800%;
-  animation: AnimationName 36s ease infinite;
-  width: 100%;
-  height: 100%;
-  
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto:wght@100&display=swap');
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 50px;
+  margin: 1rem auto; 
+  margin-bottom: 25px;
+  border-radius: .5rem;
+
+  background-color: #2d2d2d;
+  color: #fff; 
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+ 
+  width: 600px;
+  margin-bottom: 25px;
+
+  font-family: "Baloo 2";
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+
+  color:#fff
+
+}
+
+.btn {
+  width: 300px;
+  height: 75px;
+  border-radius: .5rem;
+  transition: ease-out 0.5s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Roboto';
+  letter-spacing: 2px;
+  text-align: center;
+
+  background: linear-gradient(-45deg, #282525, #1a191a, #2d2d2d, #2c2b2b);
+  background-size: 400% 400%;
+  animation: gradient 13s ease infinite;
+
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #1a7851;
+  box-shadow: inset 650px 0 0 0 #1a7851;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
