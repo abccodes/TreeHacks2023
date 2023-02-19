@@ -5,7 +5,7 @@
 ## What it does
 **Leviathan** is a website developing tool that works by processing natural language inputs from users to generate personalized websites. Its super easy to use all a user has to do is input text for whatever type of website they want to generate and the website is generated. For example if a person wants to make a blog website all they have to do is type in, make me a blog website. Then a simple version of a blog website will be generated which can be immediately used but also can act as a skeleton for a developer wanting to make more complex website.
 
-## How We Built It** 
+## How We Built It
 We built it using You.com, Trudo, ChatGPT, OpenAI, Convex, Typescript, and React. We used ChatGPT to create a bunch of sample websites which were used as datasets to train our AI model. We then used Trudo to train and compile the model. We took advantage of Convex and created functions in typescript to query OpenAI and help generate responses for website generation requests. We then put it all together using You.com and used its built in front end UI. Finally, we made a simple landing page using React that directs a user to our You.com website generation site.
 
 ## Challenges we ran into
